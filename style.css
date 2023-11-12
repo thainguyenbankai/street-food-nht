@@ -1,10 +1,5 @@
 /* cải thiện dáng tiêu để */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-.myheader {
-    background-color: #fcceac;
-    color: #fff;
-    padding: -102px 0;
-}
 
 .myheader img {
     max-width: 100%;
@@ -46,10 +41,6 @@
 
 
     /* cải thiện menu chính */
-    .mymainmenu {
-        background-color: #ff5722;
-        padding: 10px 0;
-    }
     
     .mymainmenu .navbar {
         background-color: transparent;
@@ -60,6 +51,7 @@
         color: #fff;
         font-weight: 500;
         padding: 10px 15px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     
     .mymainmenu .navbar-nav .nav-link:hover {
@@ -334,9 +326,12 @@
     /* Khoảng cách giữa văn bản và khung */
     font-size: 24px;
     /* Kích thước font chữ */
-    font-family: 'courgete', Times, serif;
+    font-family: 'Brush Script MT';
     /* Font chữ được sử dụng */
     border-radius: 10px;
+}
+.image-text a{
+    font-family: 'Times New Roman', Times, serif;
 }
 :root {
 	--facebook-color: #3b5999;
@@ -437,3 +432,36 @@
         justify-content: center;
         align-items: center;
     }
+ 
+.myheader {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 10px;
+    color: #fff;
+  
+}
+
+.mymainmenu {
+        position: relative;
+        top: 123px; /* Adjust the value to move it down by your desired amount */
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        color: #fff;
+        z-index: 1;
+}
+
+/* Style the navigation links inside the menu */
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+/* Style the active link in the menu */
+.navbar-nav .nav-link.active {
+    background-color: #fff;
+    color: #dc3545;
+}
